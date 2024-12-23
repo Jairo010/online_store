@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/stylesDecoration.css" />
+    <link rel="stylesheet" href="css/stylesFooter.css" />
+    <title>Online Store</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <img src="img/Logo.jpg" />
+        <nav class="menu">
+          <label title="home" for="home" class="label">
+            Store
+            <input id="home" name="page" type="radio" checked="" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 21 20"
+              height="20"
+              width="21"
+              class="icon home"
+            >
+              <path
+                fill="inherit"
+                d="M18.9999 6.01002L12.4499 0.770018C11.1699 -0.249982 9.16988 -0.259982 7.89988 0.760018L1.34988 6.01002C0.409885 6.76002 -0.160115 8.26002 0.0398848 9.44002L1.29988 16.98C1.58988 18.67 3.15988 20 4.86988 20H15.4699C17.1599 20 18.7599 18.64 19.0499 16.97L20.3099 9.43002C20.4899 8.26002 19.9199 6.76002 18.9999 6.01002ZM10.9199 16C10.9199 16.41 10.5799 16.75 10.1699 16.75C9.75988 16.75 9.41988 16.41 9.41988 16V13C9.41988 12.59 9.75988 12.25 10.1699 12.25C10.5799 12.25 10.9199 12.59 10.9199 13V16Z"
+              ></path>
+            </svg>
+          </label>
+          <label title="library" for="library" class="label">
+            Library
+            <input id="library" name="page" type="radio" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="12"
+              viewBox="0 0 384 512"
+            >
+              <path
+                d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"
+              />
+            </svg>
+          </label>
+
+          <label title="cart" for="cart" class="label">
+            Cart
+            <input id="cart" name="page" type="radio" />
+            <samp><sup style="font-size: 1em" id="car-count">0</sup></samp>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="inherit"
+              viewBox="0 0 18 20"
+              height="20"
+              width="18"
+              class="icon cart"
+            >
+              <path
+                fill="inherit"
+                d="M16.8035 6.96427C16.1335 6.22427 15.1235 5.79427 13.7235 5.64427V4.88427C13.7235 3.51427 13.1435 2.19427 12.1235 1.27427C11.6202 0.812823 11.025 0.462927 10.3771 0.247511C9.72909 0.032095 9.04292 -0.0439787 8.3635 0.0242742C5.9735 0.254274 3.9635 2.56427 3.9635 5.06427V5.64427C2.5635 5.79427 1.5535 6.22427 0.883496 6.96427C-0.0865043 8.04427 -0.0565042 9.48427 0.0534958 10.4843L0.753496 16.0543C0.963496 18.0043 1.7535 20.0043 6.0535 20.0043H11.6335C15.9335 20.0043 16.7235 18.0043 16.9335 16.0643L17.6335 10.4743C17.7435 9.48427 17.7635 8.04427 16.8035 6.96427ZM8.5035 1.41427C8.98813 1.36559 9.47758 1.41913 9.94023 1.57143C10.4029 1.72372 10.8284 1.97138 11.1894 2.29841C11.5503 2.62544 11.8387 3.02456 12.0357 3.46998C12.2328 3.91539 12.3343 4.39721 12.3335 4.88427V5.58427H5.3535V5.06427C5.3535 3.28427 6.8235 1.57427 8.5035 1.41427ZM5.2635 11.1543H5.2535C4.7035 11.1543 4.2535 10.7043 4.2535 10.1543C4.2535 9.60427 4.7035 9.15427 5.2535 9.15427C5.8135 9.15427 6.2635 9.60427 6.2635 10.1543C6.2635 10.7043 5.8135 11.1543 5.2635 11.1543ZM12.2635 11.1543H12.2535C11.7035 11.1543 11.2535 10.7043 11.2535 10.1543C11.2535 9.60427 11.7035 9.15427 12.2535 9.15427C12.8135 9.15427 13.2635 9.60427 13.2635 10.1543C13.2635 10.7043 12.8135 11.1543 12.2635 11.1543Z"
+              ></path>
+            </svg>
+          </label>
+          <label title="favorite" for="favorite" class="label"
+            >Favorites
+            <input id="favorite" name="page" type="radio" />
+            <samp><sup style="font-size: 1em" id="favorites">0</sup></samp>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="inherit"
+              viewBox="0 0 20 18"
+              height="18"
+              width="20"
+              class="icon favorite"
+            >
+              <path
+                fill="inherit"
+                d="M14.44 0C12.63 0 11.01 0.88 10 2.23C9.48413 1.53881 8.81426 0.977391 8.04353 0.590295C7.27281 0.203198 6.42247 0.00108555 5.56 0C2.49 0 0 2.5 0 5.59C0 6.78 0.19 7.88 0.52 8.9C2.1 13.9 6.97 16.89 9.38 17.71C9.72 17.83 10.28 17.83 10.62 17.71C13.03 16.89 17.9 13.9 19.48 8.9C19.81 7.88 20 6.78 20 5.59C20 2.5 17.51 0 14.44 0Z"
+              ></path>
+            </svg>
+          </label>
+
+          <a class="Btn-login" href="login.html">
+            <div class="sign">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
+                ></path>
+              </svg>
+            </div>
+
+            <div class="text-login">Login</div>
+          </a>
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      </div>
+    </header>
+
+    <main>
+      <div class="cen-search">
+        <div class="search-container">
+          <form class="form">
+            <label for="search">
+              <input
+                required=""
+                autocomplete="off"
+                placeholder="Search a game"
+                id="search"
+                type="text"
+              />
+              <div class="icon-search">
+                <svg
+                  stroke-width="2"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="swap-on"
+                >
+                  <path
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+                <svg
+                  stroke-width="2"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="swap-off"
+                >
+                  <path
+                    d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </div>
+              <button type="reset" class="close-btn">
+                <svg
+                  viewBox="0 0 20 20"
+                  class="h-5 w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container" id="container1">
+          <div class="carousel-container">
+            <div class="carousel">
+              <img src="img/game1/1.png" alt="Imagen 1" />
+              <img src="img/game1/2.jpg" alt="Imagen 2" />
+              <img src="img/game1/3.jpg" alt="Imagen 3" />
+              <img src="img/game1/4.jpg" alt="Imagen 4" />
+            </div>
+          </div>
+
+          <div class="container4">
+            <button class="Btn" onclick="incrementarContador('contador1')">
+              <span class="leftContainer">
+                <svg
+                  fill="white"
+                  viewBox="0 0 512 512"
+                  height="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+                  ></path>
+                </svg>
+                <span class="like">Like</span>
+              </span>
+              <span class="likeCount" id="contador1"> 9,998 </span>
+            </button>
+            
+            <div class="container5" id="details-container1">
+              <article class="game-details" >
+                  <h2>RESIDENT EVIL 4 REMAKE</h2>
+                  <p><span class="subtitle-games">Developer:</span> <span class="content-subtitle">CAPCOM Co., Ltd.</span></p>
+                  <p><span class="subtitle-games">Publisher:</span> <span class="content-subtitle">CAPCOM Co., Ltd.</span></p>
+                  <p><span class="subtitle-games">Release Date:</span> <span class="content-subtitle">23 Mar, 2023</span></p>
+                <section class="game-description">
+                  <h3>Game Description</h3>
+                  <p class="description-game">Survival is just the beginning. Six years have passed since the biological disaster in Raccoon City. Leon S. Kennedy, one of the survivors, tracks the president's kidnapped daughter to a secluded European village, where there is something terribly wrong with the locals.</p>
+                </section>
+                <section class="system-requirements">
+                  <h3>System Requirements</h3>
+                  <ul>
+                    <li><span class="subtitle-games">Operating System:</span> <span class="content-subtitle">Windows 10 (64 bit)/Windows 11 (64 bit)</span></li>
+                    <li><span class="subtitle-games">Processor:</span> <span class="content-subtitle"> AMD Ryzen 5 3600 / Intel Core i7 8700</span></li>
+                    <li><span class="subtitle-games">Memory:</span> <span class="content-subtitle"> 16 gb Ram</span></li>
+                    <li><span class="subtitle-games">Graphics:</span> <span class="content-subtitle"> AMD Radeon RX 5700 / NVIDIA GeForce GTX 1070</span></li>
+                    <li><span class="subtitle-games">Storage:</span><span class="content-subtitle"> 50 GB available space</span></li>
+                  </ul>
+                </section>
+              </article>
+            </div>
+            
+            <div class="rating-class" id="rating-container-1">
+              <div class="rating">
+                <input
+                  value="5"
+                  name="rate1"
+                  id="star5-container1"
+                  type="radio"
+                />
+                <label title="text" for="star5-container1"></label>
+                <input
+                  value="4"
+                  name="rate1"
+                  id="star4-container1"
+                  type="radio"
+                />
+                <label title="text" for="star4-container1"></label>
+                <input
+                  value="3"
+                  name="rate1"
+                  id="star3-container1"
+                  type="radio"
+                  checked=""
+                />
+                <label title="text" for="star3-container1"></label>
+                <input
+                  value="2"
+                  name="rate1"
+                  id="star2-container1"
+                  type="radio"
+                />
+                <label title="text" for="star2-container1"></label>
+                <input
+                  value="1"
+                  name="rate1"
+                  id="star1-container1"
+                  type="radio"
+                />
+                <label title="text" for="star1-container1"></label>
+              </div>
+            </div>
+            <div class="container6">
+              <div class="btn-group">
+                <button class="btn-details" onclick="toggleDetails('container1')"><span class="text-btn-detail">Details</span></button>
+                <button
+                  class="CartBtn"
+                  onclick="incrementarContador('car-count')"
+                >
+                  <span class="IconContainer">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 576 512"
+                      fill="rgb(17, 17, 17)"
+                      class="cart"
+                    >
+                      <path
+                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <p class="text">Add to Cart</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container" id="container2">
+          <div class="carousel-container">
+            <div class="carousel">
+              <img src="img/game2/Portada-PUBG.jpg" alt="Imagen 1" />
+              <img src="img/game2/2.jpg" alt="Imagen 2" />
+              <img src="img/game2/3.jpg" alt="Imagen 3" />
+              <img src="img/game2/4.jpg" alt="Imagen 4" />
+            </div>
+          </div>
+          <div class="container4">
+            <button class="Btn" onclick="incrementarContador('contador2')">
+              <span class="leftContainer">
+                <svg
+                  fill="white"
+                  viewBox="0 0 512 512"
+                  height="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+                  ></path>
+                </svg>
+                <span class="like">Like</span>
+              </span>
+              <span class="likeCount" id="contador2"> 5,800 </span>
+            </button>
+            
+            <div class="container5" id="details-container2">
+              <article class="game-details" >
+                <h2>PUBG: BATTLEGROUNDS</h2>
+                <p><span class="subtitle-games">Developer:</span> <span class="content-subtitle">KRAFTON, Inc.</span></p>
+                <p><span class="subtitle-games">Publisher:</span> <span class="content-subtitle"> KRAFTON, Inc.</span></p>
+                <p><span class="subtitle-games">Release Date:</span> <span class="content-subtitle"> 21 Dic, 2017</span></p>
+              <section class="game-description">
+                <h3>Game Description</h3>
+                <p class="description-game">Land on strategic locations, loot weapons and supplies, and survive to become the last team standing across various, diverse Battlegrounds.
+                  Squad up and join the Battlegrounds for the original Battle Royale experience that only PUBG: BATTLEGROUNDS can offer.</p>
+              </section>
+              <section class="system-requirements">
+                <h3>System Requirements</h3>
+                <ul>
+                  <li><span class="subtitle-games">Operating System:</span> <span class="content-subtitle"> 64-bit Windows 10</span></li>
+                  <li><span class="subtitle-games">Processor:</span> <span class="content-subtitle"> Intel Core i5-6600K / AMD Ryzen 5 1600</span></li>
+                  <li><span class="subtitle-games">Memory:</span> <span class="content-subtitle">16 GB RAM</span></li>
+                  <li><span class="subtitle-games">Graphics:</span> <span class="content-subtitle"> NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB</span></li>
+                  <li><span class="subtitle-games">Storage:</span> <span class="content-subtitle"> 50 GB available space</span></li>
+                </ul>
+              </section>
+            </article>
+            </div>
+            
+            <div class="rating-class" id="rating-container-2">
+              <div class="rating">
+                <input
+                  value="5"
+                  name="rate2"
+                  id="star5-container2"
+                  type="radio"
+                />
+                <label title="text" for="star5-container2"></label>
+                <input
+                  value="4"
+                  name="rate2"
+                  id="star4-container2"
+                  type="radio"
+                />
+                <label title="text" for="star4-container2"></label>
+                <input
+                  value="3"
+                  name="rate2"
+                  id="star3-container2"
+                  type="radio"
+                  checked=""
+                />
+                <label title="text" for="star3-container2"></label>
+                <input
+                  value="2"
+                  name="rate2"
+                  id="star2-container2"
+                  type="radio"
+                />
+                <label title="text" for="star2-container2"></label>
+                <input
+                  value="1"
+                  name="rate2"
+                  id="star1-container2"
+                  type="radio"
+                />
+                <label title="text" for="star1-container2"></label>
+              </div>
+            </div>
+            <div class="container6">
+              <div class="btn-group">
+                <button class="btn-details" onclick="toggleDetails('container2')"><span class="text-btn-detail">Details</span></button>
+                <button
+                  class="CartBtn"
+                  onclick="incrementarContador('car-count')"
+                >
+                  <span class="IconContainer">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 576 512"
+                      fill="rgb(17, 17, 17)"
+                      class="cart"
+                    >
+                      <path
+                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <p class="text">Add to Cart</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container" id="container3">
+          <div class="carousel-container">
+            <div class="carousel">
+              <img src="img/game3/Forza 1.jpg" alt="Imagen 1" />
+              <img src="img/game3/Forza 2.jpg" alt="Imagen 2" />
+              <img src="img/game3/Forza 3.jpg" alt="Imagen 3" />
+              <img src="img/game3/forza 4.jpg" alt="Imagen 4" />
+            </div>
+          </div>
+          <div class="container4">
+            <button class="Btn" onclick="incrementarContador('contador3')">
+              <span class="leftContainer">
+                <svg
+                  fill="white"
+                  viewBox="0 0 512 512"
+                  height="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+                  ></path>
+                </svg>
+                <span class="like">Like</span>
+              </span>
+              <span class="likeCount" id="contador3"> 3,345 </span>
+            </button>
+            
+            <div class="container5" id="details-container3">
+              <article class="game-details">
+                <h2>FORZA HORIZONT 5</h2>
+                <p><span class="subtitle-games">Developer:</span> <span class="content-subtitle"> Playground Games</span></p>
+                <p><span class="subtitle-games">Publisher:</span> <span class="content-subtitle"> Xbox Game Studios</span></p>
+                <p><span class="subtitle-games">Release Date:</span> <span class="content-subtitle"> 8 Nov, 2021</span></p>
+              <section class="game-description">
+                <h3>Game Description</h3>
+                <p class="description-game">Your Ultimate Horizon Adventure awaits! Explore the vibrant open world landscapes of Mexico with limitless, fun driving action in the world’s greatest cars. Conquer the rugged Sierra Nueva in the ultimate Horizon Rally experience. Requires Forza Horizon 5 game, expansion sold separately.</p>
+              </section>
+              <section class="system-requirements">
+                <h3>System Requirements</h3>
+                <ul>
+                  <li><span class="subtitle-games">Operating System:</span> <span class="content-subtitle"> Windows 10 version 18362.0 or higher</span></li>
+                  <li><span class="subtitle-games">Processor:</span> <span class="content-subtitle"> Intel i5-8400 or AMD Ryzen 5 1500X</span></li>
+                  <li><span class="subtitle-games">Memory:</span> <span class="content-subtitle"> 16 GB RAM</span></li>
+                  <li><span class="subtitle-games">Graphics:</span> <span class="content-subtitle"> NVidia GTX 1070 OR AMD RX 590</span></li>
+                  <li><span class="subtitle-games">Storage:</span> <span class="content-subtitle"> 110 GB available space</span></li>
+                </ul>
+              </section>
+            </div>
+            
+            <div class="rating-class" id="rating-container-1">
+              <div class="rating">
+                <input
+                  value="5"
+                  name="rate3"
+                  id="star5-container3"
+                  type="radio"
+                />
+                <label title="text" for="star5-container3"></label>
+                <input
+                  value="4"
+                  name="rate3"
+                  id="star4-container3"
+                  type="radio"
+                />
+                <label title="text" for="star4-container3"></label>
+                <input
+                  value="3"
+                  name="rate3"
+                  id="star3-container3"
+                  type="radio"
+                  checked=""
+                />
+                <label title="text" for="star3-container3"></label>
+                <input
+                  value="2"
+                  name="rate3"
+                  id="star2-container3"
+                  type="radio"
+                />
+                <label title="text" for="star2-container3"></label>
+                <input
+                  value="1"
+                  name="rate3"
+                  id="star1-container3"
+                  type="radio"
+                />
+                <label title="text" for="star1-container3"></label>
+              </div>
+            </div>
+            <div class="container6">
+              <div class="btn-group">
+                <button class="btn-details" onclick="toggleDetails('container3')"><span class="text-btn-detail">Details</span></button>
+                <button
+                  class="CartBtn"
+                  onclick="incrementarContador('car-count')"
+                >
+                  <span class="IconContainer">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 576 512"
+                      fill="rgb(17, 17, 17)"
+                      class="cart"
+                    >
+                      <path
+                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <p class="text">Add to Cart</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container" id="container4">
+          <div class="carousel-container">
+            <div class="carousel">
+              <img src="img/game4/Spiderman.jpg" alt="Imagen 1" />
+              <img src="img/game4/spiderman-2.jpg" alt="Imagen 2" />
+              <img src="img/game4/spiderman-3.jpg" alt="Imagen 3" />
+              <img src="img/game4/spiderman-4.jpg" alt="Imagen 4" />
+            </div>
+          </div>
+          <div class="container4">
+            <button class="Btn" onclick="incrementarContador('contador4')">
+              <span class="leftContainer">
+                <svg
+                  fill="white"
+                  viewBox="0 0 512 512"
+                  height="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+                  ></path>
+                </svg>
+                <span class="like">Like</span>
+              </span>
+              <span class="likeCount" id="contador4"> 2,120 </span>
+            </button>
+            
+            <div class="container5" id="details-container4">
+              <article class="game-details">
+                <h2>SPIDER MAN REMASTERED</h2>
+                <p><span class="subtitle-games">Developer:</span> <span class="content-subtitle"> Insomniac Games</span></p>
+                <p><span class="subtitle-games">Publisher:</span> <span class="content-subtitle"> PlayStation PC LLC</span></p>
+                <p><span class="subtitle-games">Release Date:</span> <span class="content-subtitle"> 12 Aug, 2022</span></p>
+              <section class="game-description">
+                <h3>Game Description</h3>
+                <p class="description-game">Introduces an experienced Peter Parker who’s fighting big crime and iconic villains in Marvel’s New York. At the same time, he’s struggling to balance his chaotic personal life and career while the fate of Marvel’s New York rests upon his shoulders.</p>
+              </section>
+              <section class="system-requirements">
+                <h3>System Requirements</h3>
+                <ul>
+                  <li><span class="subtitle-games">Operating System:</span> <span class="content-subtitle"> Windows 10 64-bit</span></li>
+                  <li><span class="subtitle-games">Processor:</span> <span class="content-subtitle"> Intel Core i5-4670 or AMD Ryzen5 1600</span></li>
+                  <li><span class="subtitle-games">Memory:</span> <span class="content-subtitle"> 16 GB RAM</span></li>
+                  <li><span class="subtitle-games">Graphics:</span> <span class="content-subtitle"> NVIDIA GTX 1060 6GB or AMD Radeon RX 580 8GB</span></li>
+                  <li><span class="subtitle-games">Storage:</span> <span class="content-subtitle"> 75 GB available space</span></li>
+                </ul>
+              </section>
+            </div>
+            
+            <div class="rating-class" id="rating-container-1">
+              <div class="rating">
+                <input
+                  value="5"
+                  name="rate4"
+                  id="star5-container4"
+                  type="radio"
+                />
+                <label title="text" for="star5-container4"></label>
+                <input
+                  value="4"
+                  name="rate4"
+                  id="star4-container4"
+                  type="radio"
+                />
+                <label title="text" for="star4-container4"></label>
+                <input
+                  value="3"
+                  name="rate4"
+                  id="star3-container4"
+                  type="radio"
+                  checked=""
+                />
+                <label title="text" for="star3-container4"></label>
+                <input
+                  value="2"
+                  name="rate4"
+                  id="star2-container4"
+                  type="radio"
+                />
+                <label title="text" for="star2-container4"></label>
+                <input
+                  value="1"
+                  name="rate4"
+                  id="star1-container4"
+                  type="radio"
+                />
+                <label title="text" for="star1-container4"></label>
+              </div>
+            </div>
+            <div class="container6">
+              <div class="btn-group">
+                <button class="btn-details" onclick="toggleDetails('container4')"><span class="text-btn-detail">Details</span></button>
+                <button
+                  class="CartBtn"
+                  onclick="incrementarContador('car-count')"
+                >
+                  <span class="IconContainer">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 576 512"
+                      fill="rgb(17, 17, 17)"
+                      class="cart"
+                    >
+                      <path
+                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <p class="text">Add to Cart</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container" id="container5">
+          <div class="carousel-container">
+            <div class="carousel">
+              <img src="img/game5/Half-Life.jpg" alt="Imagen 1" />
+              <img src="img/game5/half-life-2.jpg" alt="Imagen 2" />
+              <img src="img/game5/half-life-3.jpg" alt="Imagen 3" />
+              <img src="img/game5/half-life-4.jpg" alt="Imagen 4" />
+            </div>
+          </div>
+          <div class="container4">
+            <button class="Btn" onclick="incrementarContador('contador5')">
+              <span class="leftContainer">
+                <svg
+                  fill="white"
+                  viewBox="0 0 512 512"
+                  height="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+                  ></path>
+                </svg>
+                <span class="like">Like</span>
+              </span>
+              <span class="likeCount" id="contador5"> 975 </span>
+            </button>
+            
+            <div class="container5" id="details-container5">
+              <article class="game-details">
+                <h2>HALF-LIFE</h2>
+                <p><span class="subtitle-games">Developer:</span> <span class="content-subtitle"> Valve</span></p>
+                <p><span class="subtitle-games">Publisher:</span> <span class="content-subtitle"> Valve</span></p>
+                <p><span class="subtitle-games">Release Date:</span> <span class="content-subtitle"> 8 Nov, 1998</span></p>
+              <section class="game-description">
+                <h3>Game Description</h3>
+                <p class="description-game">Valve's debut title blends action and adventure with award-winning technology to create a frighteningly realistic world where players must think to survive</p>
+              </section>
+              <section class="system-requirements">
+                <h3>System Requirements</h3>
+                <ul>
+                  <li><span class="subtitle-games">Operating System:</span> <span class="content-subtitle"> Windows XP, 8, 9, 10</span></li>
+                  <li><span class="subtitle-games">Processor:</span> <span class="content-subtitle"> 800 mhz processor</span></li>
+                  <li><span class="subtitle-games">Memory:</span> <span class="content-subtitle"> 128mb RAM</span></li>
+                  <li><span class="subtitle-games">Graphics:</span> <span class="content-subtitle"> 32mb + VIDEO CARD</span></li>
+                  <li><span class="subtitle-games">Storage:</span> <span class="content-subtitle"> 5 GB available space</span></li>
+                </ul>
+              </section>
+            </div>
+            
+            <div class="rating-class" id="rating-container-1">
+              <div class="rating">
+                <input
+                  value="5"
+                  name="rate5"
+                  id="star5-container5"
+                  type="radio"
+                />
+                <label title="text" for="star5-container5"></label>
+                <input
+                  value="4"
+                  name="rate5"
+                  id="star4-container5"
+                  type="radio"
+                />
+                <label title="text" for="star4-container5"></label>
+                <input
+                  value="3"
+                  name="rate5"
+                  id="star3-container5"
+                  type="radio"
+                  checked=""
+                />
+                <label title="text" for="star3-container5"></label>
+                <input
+                  value="2"
+                  name="rate5"
+                  id="star2-container5"
+                  type="radio"
+                />
+                <label title="text" for="star2-container5"></label>
+                <input
+                  value="1"
+                  name="rate5"
+                  id="star1-container5"
+                  type="radio"
+                />
+                <label title="text" for="star1-container5"></label>
+              </div>
+            </div>
+            <div class="container6">
+              <div class="btn-group">
+                <button class="btn-details" onclick="toggleDetails('container5')"><span class="text-btn-detail">Details</span></button>
+                <button
+                  class="CartBtn"
+                  onclick="incrementarContador('car-count')"
+                >
+                  <span class="IconContainer">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 576 512"
+                      fill="rgb(17, 17, 17)"
+                      class="cart"
+                    >
+                      <path
+                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <p class="text">Add to Cart</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container" id="container6">
+          <div class="carousel-container">
+            <div class="carousel">
+              <img src="img/game6/Guitar.jpg" alt="Imagen 1" />
+              <img src="img/game6/2.jpg" alt="Imagen 2" />
+              <img src="img/game6/3.jpg" alt="Imagen 3" />
+              <img src="img/game6/4.jpg" alt="Imagen 3" />
+            </div>
+          </div>
+          <div class="container4">
+            <button class="Btn" onclick="incrementarContador('contador6')">
+              <span class="leftContainer">
+                <svg
+                  fill="white"
+                  viewBox="0 0 512 512"
+                  height="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+                  ></path>
+                </svg>
+                <span class="like">Like</span>
+              </span>
+              <span class="likeCount" id="contador6"> 1,050 </span>
+            </button>
+            
+            <div class="container5" id="details-container6">
+              <article class="game-details">
+                <h2>GUITAR HERO 3</h2>
+                <p><span class="subtitle-games">Developer:</span> <span class="content-subtitle"> Neversoft</span></p>
+                <p><span class="subtitle-games">Publisher:</span> <span class="content-subtitle"> MusicHeroGames</span></p>
+                <p><span class="subtitle-games">Release Date:</span> <span class="content-subtitle"> 20 Jun, 2005</span></p>
+              <section class="game-description">
+                <h3>Game Description</h3>
+                <p class="description-game">Create your own band and journey around the world facing famous guitarists Slash, Tom Morello and Lou, the devil himself.</p>
+              </section>
+              <section class="system-requirements">
+                <h3>System Requirements</h3>
+                <ul>
+                  <li><span class="subtitle-games">Operating System:</span> <span class="content-subtitle"> Windows XP SP2</span></li>
+                  <li><span class="subtitle-games">Processor:</span> <span class="content-subtitle"> Intel Pentium or AMD Athlon 64</span></li>
+                  <li><span class="subtitle-games">Memory:</span> <span class="content-subtitle"> XP - 1 GB RAM, Vista - 2GB RAM</span></li>
+                  <li><span class="subtitle-games">Graphics:</span> <span class="content-subtitle"> 32mb + VIDEO CARD</span></li>
+                  <li><span class="subtitle-games">Storage:</span> <span class="content-subtitle"> 6 GB available space</span></li>
+                </ul>
+              </section>
+            </div>
+            
+            <div class="rating-class" id="rating-container-1">
+              <div class="rating">
+                <input
+                  value="5"
+                  name="rate6"
+                  id="star5-container6"
+                  type="radio"
+                />
+                <label title="text" for="star5-container6"></label>
+                <input
+                  value="4"
+                  name="rate6"
+                  id="star4-container6"
+                  type="radio"
+                />
+                <label title="text" for="star4-container6"></label>
+                <input
+                  value="3"
+                  name="rate6"
+                  id="star3-container6"
+                  type="radio"
+                  checked=""
+                />
+                <label title="text" for="star3-container6"></label>
+                <input
+                  value="2"
+                  name="rate6"
+                  id="star2-container6"
+                  type="radio"
+                />
+                <label title="text" for="star2-container6"></label>
+                <input
+                  value="1"
+                  name="rate6"
+                  id="star1-container6"
+                  type="radio"
+                />
+                <label title="text" for="star1-container6"></label>
+              </div>
+            </div>
+            <div class="container6">
+              <div class="btn-group">
+                <button class="btn-details" onclick="toggleDetails('container6')"><span class="text-btn-detail">Details</span></button>
+                <button
+                  class="CartBtn"
+                  onclick="incrementarContador('car-count')"
+                >
+                  <span class="IconContainer">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 576 512"
+                      fill="rgb(17, 17, 17)"
+                      class="cart"
+                    >
+                      <path
+                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <p class="text">Add to Cart</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <dl>
+          <dt>Contactanos:</dt>
+          <dt>mail:</dt>
+          <dd>jairofreireortiz10@gmail.com</dd>
+          <dt>Telefono:</dt>
+          <dd>0999309622</dd>
+          <dt>Dirección:</dt>
+          <dd>Ambato, UTA</dd>
+        </dl>
+        <p class="footer-copyright">
+          © 2024 Freire - Jairo. Todos los derechos reservados.
+        </p>
+      </div>
+      <div class="mail">
+        <div class="tooltip-container">
+          <span class="tooltip">jfreire.com</span>
+          <span class="text">@</span>
+        </div>
+      </div>
+      <div class="footer-medias">
+        <div class="main">
+          <div class="card">
+            <svg
+              fill-rule="nonzero"
+              height="30px"
+              width="30px"
+              viewBox="0,0,256,256"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              class="instagram"
+            >
+              <g
+                style="mix-blend-mode: normal"
+                text-anchor="none"
+                font-size="none"
+                font-weight="none"
+                font-family="none"
+                stroke-dashoffset="0"
+                stroke-dasharray=""
+                stroke-miterlimit="10"
+                stroke-linejoin="miter"
+                stroke-linecap="butt"
+                stroke-width="1"
+                stroke="none"
+                fill-rule="nonzero"
+              >
+                <g transform="scale(8,8)">
+                  <path
+                    d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="card">
+            <svg
+              height="30px"
+              width="30px"
+              viewBox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+              class="twitter"
+            >
+              <path
+                d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"
+              ></path>
+            </svg>
+          </div>
+          <div class="card">
+            <svg
+              height="30px"
+              width="30px"
+              viewBox="0 0 40 40"
+              xmlns="http://www.w3.org/2000/svg"
+              class="dribble"
+            >
+              <path
+                d="M20,38.5C9.799,38.5,1.5,30.201,1.5,20S9.799,1.5,20,1.5S38.5,9.799,38.5,20S30.201,38.5,20,38.5z"
+              ></path>
+              <path
+                d="M20,2c9.925,0,18,8.075,18,18s-8.075,18-18,18S2,29.925,2,20S10.075,2,20,2 M20,1 C9.507,1,1,9.507,1,20s8.507,19,19,19s19-8.507,19-19S30.493,1,20,1L20,1z"
+                fill="#ea4c89"
+              ></path>
+              <path
+                d="M28.352 36.914c0 0-3.032-21.087-15.63-34.292M1.269 17.848c0 0 24.2 2.117 32.075-11.102M7.804 34.152c0 0 8.624-19.807 31.058-12.194"
+                stroke-miterlimit="10"
+                stroke="#ea4c89"
+                fill="none"
+              ></path>
+            </svg>
+          </div>
+          <div class="card">
+            <svg
+              height="30px"
+              width="30px"
+              viewBox="0 0 50 50"
+              xmlns="http://www.w3.org/2000/svg"
+              class="codepen"
+            >
+              <path
+                d="M 25 4 L 4 17.34375 L 4 32.652344 L 25 46 L 46 32.65625 L 46 17.34375 Z M 25 29.183594 L 19.066406 25.070313 L 25 21.023438 L 30.933594 25.070313 Z M 27 17.605469 L 27 9.949219 L 40.429688 18.484375 L 34.410156 22.65625 Z M 23 17.605469 L 15.589844 22.65625 L 9.570313 18.484375 L 23 9.949219 Z M 12.09375 25.042969 L 8 27.832031 L 8 22.203125 Z M 15.570313 27.453125 L 23 32.605469 L 23 40.050781 L 9.589844 31.527344 Z M 27 32.605469 L 34.429688 27.453125 L 40.410156 31.527344 L 27 40.050781 Z M 37.90625 25.042969 L 42 22.203125 L 42 27.832031 Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 100 100"
+              height="23px"
+              width="23px"
+              class="uiverse"
+            >
+              <path
+                fill="url(#paint0_linear_501_142)"
+                d="M38.0481 4.82927C38.0481 2.16214 40.018 0 42.4481 0H51.2391C53.6692 0 55.6391 2.16214 55.6391 4.82927V40.1401C55.6391 48.8912 53.2343 55.6657 48.4248 60.4636C43.6153 65.2277 36.7304 67.6098 27.7701 67.6098C18.8099 67.6098 11.925 65.2953 7.11548 60.6663C2.37183 56.0036 3.8147e-06 49.2967 3.8147e-06 40.5456V4.82927C3.8147e-06 2.16213 1.96995 0 4.4 0H13.2405C15.6705 0 17.6405 2.16214 17.6405 4.82927V39.1265C17.6405 43.7892 18.4805 47.2018 20.1605 49.3642C21.8735 51.5267 24.4759 52.6079 27.9678 52.6079C31.4596 52.6079 34.0127 51.5436 35.6268 49.4149C37.241 47.2863 38.0481 43.8399 38.0481 39.0758V4.82927Z"
+              ></path>
+              <path
+                fill="url(#paint1_linear_501_142)"
+                d="M86.9 61.8682C86.9 64.5353 84.9301 66.6975 82.5 66.6975H73.6595C71.2295 66.6975 69.2595 64.5353 69.2595 61.8682V4.82927C69.2595 2.16214 71.2295 0 73.6595 0H82.5C84.9301 0 86.9 2.16214 86.9 4.82927V61.8682Z"
+              ></path>
+              <path
+                fill="url(#paint2_linear_501_142)"
+                d="M2.86102e-06 83.2195C2.86102e-06 80.5524 1.96995 78.3902 4.4 78.3902H83.6C86.0301 78.3902 88 80.5524 88 83.2195V89.1707C88 91.8379 86.0301 94 83.6 94H4.4C1.96995 94 0 91.8379 0 89.1707L2.86102e-06 83.2195Z"
+              ></path>
+              <defs>
+                <linearGradient
+                  gradientUnits="userSpaceOnUse"
+                  y2="87.6201"
+                  x2="96.1684"
+                  y1="0"
+                  x1="0"
+                  id="paint0_linear_501_142"
+                >
+                  <stop stop-color="#BF66FF"></stop>
+                  <stop stop-color="#6248FF" offset="0.510417"></stop>
+                  <stop stop-color="#00DDEB" offset="1"></stop>
+                </linearGradient>
+                <linearGradient
+                  gradientUnits="userSpaceOnUse"
+                  y2="87.6201"
+                  x2="96.1684"
+                  y1="0"
+                  x1="0"
+                  id="paint1_linear_501_142"
+                >
+                  <stop stop-color="#BF66FF"></stop>
+                  <stop stop-color="#6248FF" offset="0.510417"></stop>
+                  <stop stop-color="#00DDEB" offset="1"></stop>
+                </linearGradient>
+                <linearGradient
+                  gradientUnits="userSpaceOnUse"
+                  y2="87.6201"
+                  x2="96.1684"
+                  y1="0"
+                  x1="0"
+                  id="paint2_linear_501_142"
+                >
+                  <stop stop-color="#BF66FF"></stop>
+                  <stop stop-color="#6248FF" offset="0.510417"></stop>
+                  <stop stop-color="#00DDEB" offset="1"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 48 48"
+              width="30px"
+              height="30px"
+              class="discord"
+            >
+              <path
+                d="M40,12c0,0-4.585-3.588-10-4l-0.488,0.976C34.408,10.174,36.654,11.891,39,14c-4.045-2.065-8.039-4-15-4s-10.955,1.935-15,4c2.346-2.109,5.018-4.015,9.488-5.024L18,8c-5.681,0.537-10,4-10,4s-5.121,7.425-6,22c5.162,5.953,13,6,13,6l1.639-2.185C13.857,36.848,10.715,35.121,8,32c3.238,2.45,8.125,5,16,5s12.762-2.55,16-5c-2.715,3.121-5.857,4.848-8.639,5.815L33,40c0,0,7.838-0.047,13-6C45.121,19.425,40,12,40,12z M17.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C21,28.209,19.433,30,17.5,30z M30.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C34,28.209,32.433,30,30.5,30z"
+              ></path>
+            </svg>
+          </div>
+          <div class="card">
+            <svg
+              height="30px"
+              width="30px"
+              viewBox="0 0 30 30"
+              xmlns="http://www.w3.org/2000/svg"
+              class="github"
+            >
+              <path
+                d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+              ></path>
+            </svg>
+          </div>
+          <div class="card">
+            <svg
+              height="30px"
+              width="30px"
+              viewBox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+              class="telegram"
+            >
+              <path d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path>
+              <path
+                d="M33.95,15l-3.746,19.126c0,0-0.161,0.874-1.245,0.874c-0.576,0-0.873-0.274-0.873-0.274l-8.114-6.733 l-3.97-2.001l-5.095-1.355c0,0-0.907-0.262-0.907-1.012c0-0.625,0.933-0.923,0.933-0.923l21.316-8.468 c-0.001-0.001,0.651-0.235,1.126-0.234C33.667,14,34,14.125,34,14.5C34,14.75,33.95,15,33.95,15z"
+                fill="#fff"
+              ></path>
+              <path
+                d="M23,30.505l-3.426,3.374c0,0-0.149,0.115-0.348,0.12c-0.069,0.002-0.143-0.009-0.219-0.043 l0.964-5.965L23,30.505z"
+                fill="#b0bec5"
+              ></path>
+              <path
+                d="M29.897,18.196c-0.169-0.22-0.481-0.26-0.701-0.093L16,26c0,0,2.106,5.892,2.427,6.912 c0.322,1.021,0.58,1.045,0.58,1.045l0.964-5.965l9.832-9.096C30.023,18.729,30.064,18.416,29.897,18.196z"
+                fill="#cfd8dc"
+              ></path>
+            </svg>
+          </div>
+          <div class="card">
+            <svg
+              xml:space="preserve"
+              viewBox="0 0 256 256"
+              height="30"
+              width="30"
+              version="1.1"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              class="reddit"
+            >
+              <defs></defs>
+              <g
+                transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+                style="
+                  stroke: none;
+                  border-radius: 50%;
+                  stroke-width: 0;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: none;
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+              >
+                <circle
+                  transform="matrix(1 0 0 1 0 0)"
+                  style="
+                    stroke: none;
+                    stroke-width: 0;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill-rule: nonzero;
+                    opacity: 1;
+                  "
+                  r="45"
+                  cy="45"
+                  cx="45"
+                ></circle>
+                <path
+                  stroke-linecap="round"
+                  transform="matrix(1 0 0 1 0 0)"
+                  style="
+                    stroke: none;
+                    stroke-width: 1;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill-rule: nonzero;
+                    opacity: 1;
+                  "
+                  d="M 75.011 45 c -0.134 -3.624 -3.177 -6.454 -6.812 -6.331 c -1.611 0.056 -3.143 0.716 -4.306 1.823 c -5.123 -3.49 -11.141 -5.403 -17.327 -5.537 l 2.919 -14.038 l 9.631 2.025 c 0.268 2.472 2.483 4.262 4.955 3.993 c 2.472 -0.268 4.262 -2.483 3.993 -4.955 s -2.483 -4.262 -4.955 -3.993 c -1.421 0.145 -2.696 0.973 -3.4 2.204 L 48.68 17.987 c -0.749 -0.168 -1.499 0.302 -1.667 1.063 c 0 0.011 0 0.011 0 0.022 l -3.322 15.615 c -6.264 0.101 -12.36 2.025 -17.55 5.537 c -2.64 -2.483 -6.801 -2.36 -9.284 0.291 c -2.483 2.64 -2.36 6.801 0.291 9.284 c 0.515 0.481 1.107 0.895 1.767 1.186 c -0.045 0.66 -0.045 1.32 0 1.98 c 0 10.078 11.745 18.277 26.23 18.277 c 14.485 0 26.23 -8.188 26.23 -18.277 c 0.045 -0.66 0.045 -1.32 0 -1.98 C 73.635 49.855 75.056 47.528 75.011 45 z M 30.011 49.508 c 0 -2.483 2.025 -4.508 4.508 -4.508 c 2.483 0 4.508 2.025 4.508 4.508 s -2.025 4.508 -4.508 4.508 C 32.025 53.993 30.011 51.991 30.011 49.508 z M 56.152 62.058 v -0.179 c -3.199 2.405 -7.114 3.635 -11.119 3.468 c -4.005 0.168 -7.919 -1.063 -11.119 -3.468 c -0.425 -0.515 -0.347 -1.286 0.168 -1.711 c 0.447 -0.369 1.085 -0.369 1.544 0 c 2.707 1.98 6.007 2.987 9.362 2.83 c 3.356 0.179 6.667 -0.783 9.407 -2.74 c 0.492 -0.481 1.297 -0.47 1.779 0.022 C 56.655 60.772 56.644 61.577 56.152 62.058 z M 55.537 54.34 c -0.078 0 -0.145 0 -0.224 0 l 0.034 -0.168 c -2.483 0 -4.508 -2.025 -4.508 -4.508 s 2.025 -4.508 4.508 -4.508 s 4.508 2.025 4.508 4.508 C 59.955 52.148 58.02 54.239 55.537 54.34 z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <p class="text-footer">REDES<br /><br />SOCIALES<br /></p>
+          <div class="main_back"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navBar.js"></script>
+  <script src="js/carrucel.js"></script>
+  <script src="js/contador.js"></script>
+  <script src="js/details.js"></script>
+</html>
